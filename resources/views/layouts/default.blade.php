@@ -3,24 +3,24 @@
     <head>
     <title>{{ trans('app.app_name') }}</title>
         {{ Html::style("css/bootstrap.min.css") }}
-        {{ Html::style('css/main.css?v=1.6') }}
+        {{ Html::style('css/main.css') }}
     </head>
     <body>
         <div class="header">
             <div class="navButton" title="{{ trans('buttons.home') }}">
-                <a href="http://localhost:8080/web.library/public/">
+                <a href="/">
                     {{ trans('app.app_name') }}
                 </a>
             </div>
             @if (Route::currentRouteName() == "list")
             <div class="navButton" title="{{ trans('buttons.add_book_title') }}">
-                <a href="http://localhost:8080/web.library/public/add">
+                <a href="/add">
                     {{ trans('buttons.add_book') }}
                 </a>
             </div>
             @elseif (Route::currentRouteName() == "add")
             <div class="navButton" title="{{ trans('buttons.list_title') }}">
-                <a href="http://localhost:8080/web.library/public/list">
+                <a href="/list">
                     {{ trans('buttons.list') }}
                 </a>
             </div>
