@@ -2,43 +2,20 @@
 <html>
     <head>
         <title>Laravel</title>
-
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-
-        <style>
-            html, body {
-                height: 100%;
-            }
-
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
-
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-            .title {
-                font-size: 96px;
-            }
-        </style>
+        {{ Html::style('css/main.css?v=1.1') }}
     </head>
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Laravel 5</div>
+                <div class="title">Web library</div>
+            </div>
+            <div class="nav">
+                <div class="navButton" title="{{ trans('buttons.add_book_title') }}">
+                    <a href="/public/add">{{ trans('buttons.add_book') }}</a>
+                </div>
+                <div class="navButton" title="{{ trans('buttons.list_title') }}">
+                    <a href="/public/list">{{ trans('buttons.list') }}</a>
+                </div>
             </div>
         </div>
     </body>

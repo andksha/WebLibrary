@@ -1,0 +1,107 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: table;
+    font-weight: 100;
+    font-family: 'Lato';
+    font-size: 15pt;
+}
+
+a {
+    color: #666666;
+    text-decoration: none;
+}
+
+.container {
+    display: table-cell;
+}
+
+.welcome {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.content {
+    display: inline-block;
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 96px;
+    margin: auto;
+}
+
+.header {
+    font-size: 15pt;
+    display: inline-block;
+    padding: 10px;
+}
+
+.nav {
+    width: 40%;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.navButton {
+    font-size: 20pt;
+    display: inline-block;
+    width: 200px;
+
+}
+
+.book {
+    font-size: 12pt;
+}
+
+.bookAttr {
+    display: block;
+    word-wrap: break-word;
+    text-align: left;
+    overflow: hidden;
+}
+
+.cover {
+    height: 150px !important;
+    width: 100px !important;
+    float: right;
+}
+
+.pagination_buttons {
+    display: block;
+    width: 20%;
+    margin: auto;
+}
+
+.add_form {
+    width: 60%;
+    margin: 50px auto;
+}
+
+.row {
+    padding: 10px;
+}
+
+.add_textarea {
+    display: block;
+    height: 100px;
+    width: 245px;
+}
+
+.add_submit {
+    display: block;
+    width: 20%;
+    margin: 20px auto;
+}
+
+.alert {
+    width: 50%;
+    margin: 10px auto;
+}

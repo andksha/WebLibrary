@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('homes.home');
 });
+
+Route::get('/list', ['as' => 'list', 'uses' => 'BooksController@getList']);
+Route::get('/add', ['as' => 'add', 'uses' => 'BooksController@getAdd']);
+Route::post('/add', ['as' => 'add', 'uses' => 'BooksController@postAdd']);
