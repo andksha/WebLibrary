@@ -5,14 +5,10 @@
         <div class="title text-center">{{ trans('app.app_name') }}</div>
         <div class="nav">
             <div class="navButton" title="{{ trans('buttons.add_book_title') }}">
-                <a href="http://localhost:8080/web.library/public/add">
-                    {{ trans('buttons.add_book') }}
-                </a>
+                {{ link_to('/add', trans('buttons.add_book')) }}
             </div>
             <div class="navButton" title="{{ trans('buttons.list_title') }}">
-                <a href="http://localhost:8080/web.library/public/list">
-                    {{ trans('buttons.list') }}
-                </a>
+                {{ link_to('/list', trans('buttons.list')) }}
             </div>
         </div>
     </div>

@@ -8,21 +8,15 @@
     <body>
         <div class="header">
             <div class="navButton" title="{{ trans('buttons.home') }}">
-                <a href="/">
-                    {{ trans('app.app_name') }}
-                </a>
+                {{ link_to('/', trans('app.app_name')) }}
             </div>
             @if (Route::currentRouteName() == "list")
             <div class="navButton" title="{{ trans('buttons.add_book_title') }}">
-                <a href="/add">
-                    {{ trans('buttons.add_book') }}
-                </a>
+                {{ link_to('/add', trans('buttons.add_book')) }}
             </div>
             @elseif (Route::currentRouteName() == "add")
             <div class="navButton" title="{{ trans('buttons.list_title') }}">
-                <a href="/list">
-                    {{ trans('buttons.list') }}
-                </a>
+                {{ link_to('/list', trans('buttons.list')) }}
             </div>
             @endif
             
